@@ -78,8 +78,12 @@ module.exports.create = async function (req, res) {
 module.exports.createSession = async function (req, res) {
   const response_key = req.body["g-recaptcha-response"];
   const secret_key = process.env.SECRETKEY;
+  console.log(response_key);
+  console.log(secret_key);
+  
   const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${response_key}`;
   const existingUser = await User.findOne({ email: req.body.email });
+
   fetch(url, {
     method: "post",
   })
