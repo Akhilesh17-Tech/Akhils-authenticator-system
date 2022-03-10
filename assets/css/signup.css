@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+/* common for all */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main container  */
+.container {
+  width: 100%;
+  height: 100vh;
+  background: orangered;
+  /* background: linear-gradient(hsl(46, 74%, 45%), rgb(182, 184, 88)); */
+  box-sizing: border-box;
+}
+
+/* Left side container with image and welcome letter */
+
+.first-form {
+  width: 45%;
+  height: inherit;
+  float: left;
+  /* background-color: aqua; */
+}
+
+.text-left {
+  margin: 25px 0 0 45px; /* margin given from top and from left side */
+  color: white;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  font-family: cursive;
+}
+
+.img-container {
+  width: 80%;
+  /* border: 1px solid; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.img-container img {
+  width: 75%;
+}
+
+.wlcm-title {
+  /* border: 1px solid; */
+  width: 80%;
+  margin: auto;
+  /* position: relative; */
+}
+.highlight {
+  margin-top: 0%;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 0.08rem;
+  font-weight: 700;
+  font-family: cursive;
+}
+
+/* form container for right side part for sign up  */
+.form-container {
+  width: 55%;
+  background-color: white;
+  height: inherit;
+  float: right;
+  border-radius: 55px 0 0 55px;
+}
+
+.text-right {
+  text-align: right;
+  margin: 25px;
+  margin-right: 40px;
+}
+.text-highlight-1 {
+  color: orangered;
+  font-weight: bold;
+}
+
+.text-highlight-2 {
+  color: orangered;
+  font-weight: bold;
+  font-family: cursive;
+}
+.navbar a {
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+}
+
+.sign-color {
+  color: #070433;
+}
+
+/* sign up section */
+
+.signup-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 15vh;
+  height: auto;
+  /* border: 2px solid red; */
+}
+.sign-up-form {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 5%;
+  /* border: 2px solid ; */
+}
+.input-container {
+  /* display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+
+.icon {
+  padding: 10px;
+  /* background: orangered; */
+  color: grey;
+  min-width: 1px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  border: 0px solid transparent;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  padding: 15px 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.clr-icon {
+  padding-right: 6px;
+  color: grey;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.google-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.google-btn {
+  width: 100%;
+  background-color: #070433;
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 15px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+}

@@ -1,0 +1,237 @@
+/* common for all  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  main container of the full body */
+.container {
+  display: flex;
+}
+
+/* left side container with 50% width */
+.left-div {
+  width: 50%;
+  height: 100vh;
+  /* background: linear-gradient(hsl(46, 74%, 45%), rgb(182, 184, 88)); */
+  background: orangered;
+  border-radius: 0 15px 15px 0;
+}
+
+.company-detail-box {
+  width: 75%;
+  height: 60vh;
+  /* border: 2px solid red; */
+  margin: auto;
+  margin-top: 30vh;
+}
+
+.Company-Name {
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: bold;
+  color: white;
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  /* border: 2px solid; */
+}
+
+.img-container img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.create-btn-container {
+  width: 50%;
+  /* border: 2px solid red; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.create-btn {
+  width: 80%;
+  background-color: #070433;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* right side container with 50% width */
+.right-div {
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(248, 248, 248);
+}
+
+.login-box {
+  width: 100%;
+  height: 50vh;
+  margin-top: 30vh;
+  /* border: 2px solid red; */
+}
+
+.login-title {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 2.9rem;
+  font-weight: bold;
+  color: #070433;
+  /* border: 1px solid black; */
+}
+
+/* form start */
+
+.login-form {
+  max-width: 500px;
+  margin: auto;
+  /* border: 1px solid black; */
+  margin-top: 5%;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  border: 2px solid lightgrey;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 1px;
+  color: #070433;
+}
+
+.input-field {
+  width: 100%;
+  padding-left: 5px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #070433;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+.forget-pass {
+  float: right;
+  margin-top: 8px;
+}
+
+.forget-pass a {
+  text-decoration: none;
+  color: #070433;
+  font-weight: bold;
+}
+/* form end  */
+
+/* google sign in start */
+.sign-in-box {
+  margin-top: 35px;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.sign-in-box h4 {
+  /* border: 1px solid violet; */
+  padding: 10px;
+  color: #070433;
+  margin-bottom: 8px;
+}
+
+.sign-in-strategy {
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+}
+.sign-in-strategy a {
+  font-size: 25px;
+  margin: 5px;
+}
+
+.sign-in-strategy a .facbook {
+  color: #4267b2;
+}
+.sign-in-strategy a .github {
+  color: #171515;
+}
+
+.sign-in-strategy a .google {
+  color: #4285f4;
+}
+
+/* media query for responsive */
+@media screen and (max-width: 500px) {
+  .container {
+    display: block;
+  }
+  .left-div {
+    width: 100%;
+    height: 50vh;
+
+    border-radius: 0px;
+  }
+  .right-div {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .login-box {
+    width: 100%;
+    height: auto;
+    margin-top: 0vh;
+    padding: 15px;
+    /* border: 2px solid red; */
+  }
+
+  .company-detail-box {
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 15px;
+    margin-top: 0vh;
+  }
+  .create-btn-container {
+    width: 100%;
+  }
+
+  .create-btn {
+    width: 50%;
+    font-size: 11px;
+    margin-top: 10px;
+  }
+
+  .img-container {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .img-container img {
+    width: 120px;
+  }
+
+  .Company-Name {
+    font-size: 1.9rem;
+  }
+}

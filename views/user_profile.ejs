@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/user.css" />
+<link rel="stylesheet" href="/css/common.css">
+
+<header>
+    <div class="heading">Welcome to <span class="text-highlight-2"><a href="/"> Authenticator</a></span></div>
+
+    <h2>Hello <%= locals.user.name %></h2>
+    <div class="buttons">
+        <div id="sign-out">
+            <a href="/users/sign-out">Sign Out</a>
+        </div>
+        <div id="reset-btn">
+            <a href="/users/forgot_password">Reset Password</a>
+        </div>
+    </div>
+</header>
+<main>
+    <h1>
+        Welcome!!<br />
+        User Profile
+    </h1>
+</main>

@@ -1,0 +1,67 @@
+<link rel="icon" href="/Login-Pages/signup-img.jfif">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="/css/signup.css">
+<!-- Main container for complete web page -->
+<div class="container">
+
+    <!-- first container for left side -->
+    <div class="first-form">
+        <nav class="navbar text-left">
+            <h2>Authenticator</h2>
+        </nav>
+        <div class="img-container">
+            <img src="/images/web-imge.png" alt="">
+        </div>
+        <div class="wlcm-title">
+            <h1 class="text-center highlight">Welcome</h1>
+        </div>
+    </div>
+
+
+    <!-- second container for right side -->
+    <div class="form-container">
+        <nav class="navbar text-right">
+            <span>Already have an account?</span><a href="/users/sign-in"><span class="text-highlight-1">
+                    Login</span></a>
+        </nav>
+        <!-- container for sign up page -->
+        <div class="signup-container">
+            <h1 class="text-center sign-color">Sign up to <span class="text-highlight-2">Authenticator</span></h1>
+            <form action="/users/create" method="POST" class="sign-up-form">
+                <div class="input-container">
+                    <i class="far fa-user icon"></i>
+                    <input class="input-field" type="text" placeholder="Full Name" name="name" required>
+                </div>
+                <!-- <div class="input-container">
+                    <i class="far fa-phone-alt icon"></i>
+                    <input class="input-field" type="tel" placeholder="Phone"
+                        title="Please enter 10 digit contact number" pattern="[1-9]{1}[0-9]{9}" name="phone" required>
+                </div> -->
+
+                <div class="input-container">
+                    <i class="far fa-at icon"></i>
+                    <input class="input-field" type="text" placeholder="Email" name="email" required>
+                </div>
+
+                <div class="input-container">
+                    <i class="fal fa-lock-alt icon"></i>
+                    <input class="input-field" type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="input-container">
+                    <i class="fal fa-lock-alt icon"></i>
+                    <input class="input-field" type="password" placeholder="Confirm Password" name="confirm_password"
+                        required>
+                </div>
+                <div class="g-recaptcha" style="margin-bottom: 15px"
+                    data-sitekey="6LdsgMgeAAAAALEO9gbnmcQkBJcqqsmxVtw02O_4">
+                </div>
+                <button type="submit" class="btn ">Sign Up</button>
+                <div class="google-btn-container">
+                    <a class="google-btn" href="/users/auth/google"><i class="fab fa-google clr-icon"></i>Sign up with
+                        Google</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

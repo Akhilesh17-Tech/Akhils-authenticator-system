@@ -1,0 +1,75 @@
+body {
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+.forget-container {
+  width: 50%;
+  margin: 15px auto;
+  /* border: 1px solid; */
+  /* border-radius: 5px; */
+  box-shadow: 0px 0px 6px 4px rgb(17, 17, 16);
+}
+
+.heading {
+  /* border: 1px solid; */
+  text-align: center;
+  background-color: white;
+  font-size: 35px;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.text-highlight-2 a {
+  text-decoration: none;
+  color: orangered;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.user-box {
+  /* border: 2px solid red; */
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.forget-form {
+  width: 40%;
+  margin: auto;
+  /* border: 1px solid; */
+  padding: 15px;
+}
+
+.forget-form input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.forget-form input:focus {
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.btn button {
+  width: 40%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.note {
+  font-size: 15px;
+}

@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/css/login.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<div class="container">
+    <div class="left-div">
+        <div class="company-detail-box">
+            <h1 class="Company-Name">Authenticator</h1>
+            <div class="img-container">
+                <img src="/images/avtar.jfif" alt="">
+            </div>
+            <div class="create-btn-container">
+                <a class="create-btn" href="/users/sign-up">Create new account </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- right container -->
+
+    <div class="right-div">
+        <div class="login-box">
+            <h2 class="login-title">Login</h2>
+            <form action="/users/create-session" method="POST" class="login-form">
+                <div class="input-container">
+                    <i class="fas fa-user-alt icon"></i>
+                    <input class="input-field" type="text" name="email" placeholder="User Name" required>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-lock-alt icon"></i>
+                    <input class="input-field" type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="g-recaptcha" style="margin-bottom: 15px"
+                    data-sitekey="6LdsgMgeAAAAALEO9gbnmcQkBJcqqsmxVtw02O_4">
+                </div>
+                <button class="login-btn" id="sign" type="submit">Login</button>
+                <p class="forget-pass"><a href="/users/forgot_password">Forget Password?</a></p>
+                <div class="sign-in-box">
+                    <h4>Or Sign In Using</h4>
+                    <div class="sign-in-strategy">
+                        <a href=""><i class='fab fa-facebook facbook'></i></a>
+                        <a href="/users/auth/google"><i class="fab fa-google google"></i></a>
+                        <a href=""><i class="fab fa-github github"></i></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
