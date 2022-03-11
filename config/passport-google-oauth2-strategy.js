@@ -1,10 +1,11 @@
+//  social authentication using google auth
 const passport = require("passport");
 const googleStrategy = require("passport-google-oauth").OAuth2Strategy;
 const User = require("../models/users");
 const crypto = require("crypto");
 require("dotenv").config();
 
-// tell passport to user a  new strategy for google login
+// tell passport to user a new strategy for google login
 passport.use(
   new googleStrategy(
     {

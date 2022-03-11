@@ -1,3 +1,5 @@
+// users controller
+
 const User = require("../models/users");
 const path = require("path");
 const bcrypt = require("bcrypt");

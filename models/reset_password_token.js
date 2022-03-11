@@ -1,3 +1,4 @@
+// access token schema 
 const mongoose = require("mongoose");
 
 const resetSchema = mongoose.Schema(
