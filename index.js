@@ -17,7 +17,9 @@ const path = require("path");
 const queue = require("kue");
 const config = require("dotenv").config();
 const bodyParser = require("body-parser");
-var Recaptcha = require("express-recaptcha").RecaptchaV2;
+const Recaptcha = require("express-recaptcha").RecaptchaV2;
+const env = require("./environment");
+
 
 //firing the app and setting up views
 const app = express();
@@ -31,14 +33,14 @@ app.use(
   session({
     name: "authentication",
     // TODO change the secret before deployment
-    secret: "authenticate",
+    secret: env.session_cookie_key,
     saveUninitialized: false,
     resave: false,
     cookie: {
       maxAge: 1000 * 60 * 100,
     },
     store: MongoStore.create({
-      mongoUrl: "mongodb://localhost/authentication_development",
+      mongoUrl: `mongodb+srv://akhil:${env.db_pass}@cluster0.ic01j.mongodb.net/${env.db}?retryWrites=true&w=majority`,
       mongooseConnection: db,
       autoRemove: "disabled",
     }),
