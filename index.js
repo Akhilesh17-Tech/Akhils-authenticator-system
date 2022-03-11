@@ -1,5 +1,6 @@
 const express = require("express");
 const port = process.env.PORT || 8000;
+require("dotenv").config();
 const db = require("./config/mongoose");
 const dotenv = require("dotenv").config();
 const passport = require("passport");
@@ -18,8 +19,6 @@ const queue = require("kue");
 const config = require("dotenv").config();
 const bodyParser = require("body-parser");
 const Recaptcha = require("express-recaptcha").RecaptchaV2;
-const env = require("./environment");
-
 
 //firing the app and setting up views
 const app = express();
@@ -33,14 +32,14 @@ app.use(
   session({
     name: "authentication",
     // TODO change the secret before deployment
-    secret: env.session_cookie_key,
+    secret: process.env.SESSION_COOKIE_KEY,
     saveUninitialized: false,
     resave: false,
     cookie: {
       maxAge: 1000 * 60 * 100,
     },
     store: MongoStore.create({
-      mongoUrl: `mongodb+srv://akhil:${env.db_pass}@cluster0.ic01j.mongodb.net/${env.db}?retryWrites=true&w=majority`,
+      mongoUrl: `mongodb+srv://akhil:${process.env.DATABASE_PASS}@cluster0.ic01j.mongodb.net/${process.env.DATABASE_NAME}?retryWrites=true&w=majority`,
       mongooseConnection: db,
       autoRemove: "disabled",
     }),

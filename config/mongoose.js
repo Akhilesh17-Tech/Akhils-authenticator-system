@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-const env = require("./environment");
+require("dotenv").config();
 
 mongoose.connect(
-  `mongodb+srv://akhil:${env.db_pass}@cluster0.ic01j.mongodb.net/${env.db}?retryWrites=true&w=majority`,
+  `mongodb+srv://akhil:${process.env.DATABASE_PASS}@cluster0.ic01j.mongodb.net/${process.env.DATABASE_NAME}?retryWrites=true&w=majority`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
