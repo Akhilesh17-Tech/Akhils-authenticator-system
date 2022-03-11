@@ -1,7 +1,13 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 
-mongoose.connect("mongodb://localhost/authentication_development");
+mongoose.connect(
+  "mongodb+srv://akhil:akhil1234@cluster0.ic01j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 const db = mongoose.connection;
 
