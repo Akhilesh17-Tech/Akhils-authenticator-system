@@ -11,18 +11,16 @@
 /* main container  */
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: orangered;
-  /* background: linear-gradient(hsl(46, 74%, 45%), rgb(182, 184, 88)); */
   box-sizing: border-box;
+  display: flex;
 }
 
 /* Left side container with image and welcome letter */
-
 .first-form {
   width: 45%;
-  height: inherit;
-  float: left;
+  /* border: 1px solid black; */
   /* background-color: aqua; */
 }
 
@@ -35,23 +33,21 @@
 }
 
 .img-container {
-  width: 80%;
+  width: 100%;
   /* border: 1px solid; */
-  margin: auto;
   display: flex;
   justify-content: center;
-  margin-top: 15%;
+  align-items: center;
+  margin-top: 20%;
 }
 
 .img-container img {
-  width: 75%;
+  width: 60%;
 }
 
 .wlcm-title {
   /* border: 1px solid; */
-  width: 80%;
-  margin: auto;
-  /* position: relative; */
+  width: 100%;
 }
 .highlight {
   margin-top: 0%;
@@ -66,8 +62,6 @@
 .form-container {
   width: 55%;
   background-color: white;
-  height: inherit;
-  float: right;
   border-radius: 55px 0 0 55px;
 }
 
@@ -98,12 +92,19 @@
 }
 
 /* sign up section */
+.container-box {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .signup-container {
-  width: 90%;
-  margin: 8% auto;
-  height: auto;
-  /* border: 2px solid red; */
+  width: 100%;
+  /* margin: 15% auto; */
+  /* height: auto;
+  border: 2px solid red; */
 }
 .sign-up-form {
   max-width: 500px;

@@ -14,17 +14,16 @@
 .left-div {
   width: 50%;
   height: 100vh;
-  /* background: linear-gradient(hsl(46, 74%, 45%), rgb(182, 184, 88)); */
   background: orangered;
   border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .company-detail-box {
-  width: 75%;
-  height: 60vh;
+  width: 100%;
   /* border: 2px solid red; */
-  margin: auto;
-  margin-top: 30vh;
 }
 
 .Company-Name {
@@ -71,18 +70,19 @@
   width: 50%;
   height: 100vh;
   background-color: rgb(248, 248, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-box {
   width: 100%;
-  height: 50vh;
-  margin-top: 20vh;
   /* border: 2px solid red; */
 }
 
 .login-title {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 4%;
   font-size: 2.9rem;
   font-weight: bold;
   color: #070433;
