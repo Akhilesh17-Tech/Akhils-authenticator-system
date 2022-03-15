@@ -102,15 +102,15 @@ module.exports.createResetPasswordToken = async function (req, res) {
       });
 
       passwordToken = await passwordToken.populate("user", "email");
-      // resetLinkMailer.newResetLink(passwordToken);
-      let job = queue.create("emails", passwordToken).save(function (err) {
-        if (err) {
-          console.log("Error in sending job", err);
-          return;
-        }
+      resetLinkMailer.newResetLink(passwordToken);
+      // let job = queue.create("emails", passwordToken).save(function (err) {
+      //   if (err) {
+      //     console.log("Error in sending job", err);
+      //     return;
+      //   }
         req.flash("success", "Reset Link sent! to your registered mail");
         return res.redirect("back");
-      });
+      // });
     }
     if (!reqUser) {
       req.flash("error", "Email does not exist!");

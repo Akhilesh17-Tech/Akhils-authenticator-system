@@ -16,7 +16,6 @@ const expressLayouts = require("express-ejs-layouts");
 const nodeMailer = require("./config/nodemailer");
 const path = require("path");
 const queue = require("kue");
-const config = require("dotenv").config();
 const bodyParser = require("body-parser");
 const Recaptcha = require("express-recaptcha").RecaptchaV2;
 
