@@ -1,6 +1,6 @@
 # Authentication System
 
-<li>This is a repository for Authentication System Developed using NOdeJS, MongoDB, Express.</li>
+<li>This is a repository for Authentication System Developed using NodeJS, MongoDB, Express.</li>
 <br>
 <li> It is developed with interesting features to provide users a digital yet real-life experience.</li>
 <br>
@@ -47,4 +47,4 @@ To run this repository in your system follow the given steps-<br>
    d. add your own mongoDB cluster<br>
 4. Code has been provided with comment to help you do neccessary changes, go through the directories one by one<br>
 5. After completing above steps, run the app using 'npm start' command<br>
-6. Start localhost:8000 in your favourite browser<br>
+6. Start localhost:8000 in your browser<br>
